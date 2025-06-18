@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Pilowlava';
+  src: url('./fonts/Pilowlava-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'General Sans', sans-serif;
+}
+
+i {
+    background: none;
+    margin-right: 15px;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container > .card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container > .card-container > .card {
+    width: 27%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.main-container > .card-container > #card-1 {
+    background-color: #f2b1d7;
+}
+
+.main-container > .card-container > #card-2 {
+    background-color: #d0e957;
+}
+
+.main-container > .card-container > #card-3 {
+    background-color: #ffbc01;
+}
+
+.main-container > .card-container > .card > .price-box {
+    width: 85%;
+    height: 35%;
+    margin: 30px 0 20px 0;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sentient', serif;
+    font-size: 60px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.main-container > .card-container > .card > .price-box > span {
+    background: none;
+    margin: 30px 0 0 4px;
+    font-family: 'Sentient', serif;
+    font-size: 14px;
+}
+
+/* .main-container > .card-container > .card > #price-box-1 {
+    background: url('/Day1/images/basic.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container > .card-container > .card > #price-box-2 {
+    background: url('/Day1/images/professional.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main-container > .card-container > .card > #price-box-3 {
+    background: url('/Day1/images/team.png');
+    background-size: cover;
+    background-position: center;
+} */
+
+.main-container > .card-container > .card > h3 {
+    margin: 0 0 10px 32px;
+    background: none;
+    font-size: 30px;
+}
+
+.main-container > .card-container > .card > p {
+    margin: 0 0 10px 32px;
+    background: none;
+    font-size: 17px;
+}
+
+.main-container > .card-container > .card > ul {
+    height: 25%;
+    margin: 0 0 10px 32px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-container > .card-container > .card > ul > li {
+    background: none;
+    list-style: none;
+}
+
+.main-container > .card-container > .card > button {
+    cursor: pointer;
+    margin: 5px 0 25px 32px;
+    width: 85%;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ✅ Mobile responsiveness */
+@media screen and (max-width: 1070px) {
+    .main-container {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .main-container > .card-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .main-container > .card-container > .card {
+        width: 60%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .main-container > .card-container > .card > ul {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {    
+    .main-container > .card-container > .card > button {
+        width: 80%;
+    }
+}
