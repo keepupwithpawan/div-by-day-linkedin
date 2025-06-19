@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+nav #left {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  background: url('/Day2/images/logo.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+nav #right {
+  width: 25%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blue;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav #right ul {
+  background: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+nav #right ul li {
+  background: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav #right ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: white;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+  background-color: white;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  text-align: center;
+  background: none;
+}
+
+.mobile-menu ul li {
+  background: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.mobile-menu.active ul li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-menu ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.mobile-menu ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.mobile-menu ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.mobile-menu ul li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.mobile-menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#main-container {
+  width: 96%;
+  height: 86vh;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+#main-container h1 {
+  background: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1200px) {
+  nav #right {
+    width: 33%;
+  }
+}
+@media (max-width: 900px) {
+  nav #right {
+    display: none;
+    margin-right: 0px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    width: 97%;
+    margin: auto;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  #main-container {
+    width: 95%;
+    height: 85vh;
+  }
+
+  #main-container h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav #left {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mobile-menu ul li {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  #main-container h1 {
+    font-size: 1.5rem;
+  }
+}
