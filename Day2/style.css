@@ -25,7 +25,7 @@ nav #left {
   width: 45px;
   height: 45px;
   margin-right: 20px;
-  background: url('/Day2/images/logo.png');
+  background: url('./images/logo.png');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
