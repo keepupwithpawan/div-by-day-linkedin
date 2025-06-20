@@ -11,14 +11,14 @@ export default function Component() {
 
   if (session) {
     return (
-      <div className="w-full h-[100vh] flex bg-white text-black overflow-hidden">
-        <div id="left" className="w-1/2 h-full flex items-center justify-center">
+      <div className="w-full h-[100vh] flex bg-white text-black overflow-hidden sm:flex-col">
+        <div id="left" className="w-1/2 sm:w-full  h-full flex items-center justify-center">
           <div id="logo" className="w-[97%] h-[97%] bg-[url(/logo.png)] bg-center bg-cover rounded-md"></div>
         </div>
 
         <div
           id="right"
-          className="w-1/2 h-full flex flex-col items-center justify-center bg-white"
+          className="w-1/2 sm:w-full  h-full flex flex-col items-center justify-center bg-white"
         >
           <h1 className="text-4xl font-bold mb-5 text-gray-800">DIV BY DAY - DAY 3</h1>
           <p className="w-[50%] mb-7 text-center">Welcome, {session.user?.name}. Day 3 was all about revising Auth JS sign in and basic Tailwind classes.</p>
@@ -49,14 +49,14 @@ export default function Component() {
   }
 
   return (
-    <div className="w-full h-[100vh] flex bg-white text-black overflow-hidden">
-      <div id="left" className="w-1/2 h-full flex items-center justify-center">
+    <div className="w-full h-[100vh] flex sm:flex-col sm:items-center bg-white text-black overflow-hidden">
+      <div id="left" className="w-1/2 sm:w-full h-full flex items-center justify-center">
         <div id="logo" className="w-[97%] h-[97%] bg-[url(/logo.png)] bg-center bg-cover rounded-md"></div>
       </div>
 
       <div
         id="right"
-        className="w-1/2 h-full flex flex-col items-center justify-center bg-white"
+        className="w-1/2 sm:w-full h-full flex flex-col items-center justify-center bg-white"
       >
         <h1 className="text-4xl font-bold mb-5 text-gray-800">DIV BY DAY</h1>
         <p className="mb-7">(Please sign-in below to continue)</p>
