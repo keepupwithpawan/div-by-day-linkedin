@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4 of Div by Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400&f[]=sentient@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      id="main-container"
+      class="bg-white bg-center w-full h-[100vh] overflow-hidden flex items-center"
+    >
+      <div id="card-container" class="w-[25%] h-[75%] m-auto">
+        <div
+          id="glass-card"
+          class="w-[100%] h-[100%] rounded-2xl border-1 bg-[url('images/pawan.png')] bg-center bg-cover overflow-hidden relative justify-end"
+        >
+          <div
+            id="profile-info"
+            class="flex justify-between items-center px-5 mb-7"
+          >
+            <div id="left" class="w-[70%] text-white">
+              <h2 class="font-bold text-4xl mb-1">Pawan Kamat</h2>
+              <p>Software Engineer 👾</p>
+            </div>
+
+            <div
+              id="right"
+              class="w-[25%] h-[90px] bg-[url('images/qr.png')] bg-center bg-cover cursor-pointer"
+              onclick="portfolioRedirect()"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const card = document.getElementById("glass-card");
+      const container = document.getElementById("card-container");
+
+      container.addEventListener("mousemove", (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * 10; // Max 10deg
+        const rotateY = ((x - centerX) / centerX) * 10;
+
+        card.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      container.addEventListener("mouseleave", () => {
+        card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+      });
+
+      function portfolioRedirect() {
+        window.location.href = "https://pawankamat.vercel.app/";
+      }
+    </script>
+  </body>
+</html>

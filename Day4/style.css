@@ -1,0 +1,19 @@
+* {
+  font-family: "General Sans", sans-serif;
+}
+
+#glass-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.1s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+#glass-card:hover {
+    box-shadow: 
+    0 0 15px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(0, 0, 0, 0.2),
+    0 0 45px rgba(0, 0, 0, 0.1);
+}
