@@ -17,3 +17,24 @@
     0 0 25px rgba(0, 0, 0, 0.2),
     0 0 45px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 1200px) {
+  #profile-info {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 auto;
+  }
+
+  #left {
+    width: 100%;
+  }
+
+  #left > h2 {
+    font-size: 24px;
+  }
+
+  #left > p {
+    margin-bottom: 16px;
+  }
+}
