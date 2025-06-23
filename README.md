@@ -22,6 +22,7 @@ This series is my way of:
 |-----|-----------|---------|------|
 | 1   | Responsive Pricing Cards | [View](https://div-by-day-linkedin-day-1.vercel.app/) | [Code](./Day1) |
 | 2   | Responsive Navbar | [View](https://div-by-day-linkedin-day-2.vercel.app/) | [Code](./Day2) |
+| 3   | Sign in - Next Auth & Tailwind | [View](https://div-by-day-linkedin-day-3.vercel.app/) | [Code](./Day3) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
