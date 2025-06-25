@@ -24,6 +24,7 @@ This series is my way of:
 | 2   | Responsive Navbar | [View](https://div-by-day-linkedin-day-2.vercel.app/) | [Code](./Day2) |
 | 3   | Sign in - Next Auth & Tailwind | [View](https://div-by-day-linkedin-day-3.vercel.app/) | [Code](./Day3) |
 | 4   | Profile Card - HTML & Tailwind | [View](https://div-by-day-linkedin-day-4.vercel.app/) | [Code](./Day4) |
+| 5   | Error 404 Page - Canva | - | [Code](./Day5) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
