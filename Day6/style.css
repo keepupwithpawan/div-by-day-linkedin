@@ -1,0 +1,89 @@
+* {
+  font-family: "General Sans", sans-serif;
+}
+
+#welcome {
+  opacity: 0;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+}
+
+#main-container {
+  opacity: 1;
+  animation-name: fadeInMain;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  hr {
+    border: 1px solid white;
+  }
+
+  #main-container {
+    background: #0000ff;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    width: 90%;
+    color: white;
+  }
+
+  .inputs {
+    border: 1px solid white;
+  }
+
+  .inputs::placeholder {
+    color: white;
+  }
+
+  #divider-text {
+    color: white;
+  }
+
+  .external-btn {
+    background-color: white;
+    color: black;
+  }
+
+  .internal-btn {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (max-width: 560px) {
+  #divider-text {
+    width: 45%;
+    font-size: 12px;
+    text-align: center;
+  }
+}
