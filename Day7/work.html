@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div by Day - Day 7</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=sentient@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <div
+      class="w-full h-[10vh] flex justify-between items-center px-8 bg-white/80 backdrop-blur-md border-b border-gray-200/50 sticky top-0 z-50"
+    >
+      <img src="images/logo.png" alt="" class="w-8 rounded-full" />
+      <ul class="flex space-x-6 text-gray-600">
+        <li onclick="navigateToGithub()">
+          <i
+            class="fa-brands fa-github text-xl hover:text-gray-900 cursor-pointer transition-colors"
+          ></i>
+        </li>
+        <li onclick="navigateToPLinkedin()">
+          <i
+            class="fa-brands fa-linkedin text-xl hover:text-blue-600 cursor-pointer transition-colors"
+          ></i>
+        </li>
+        <li onclick="navigateToPortfolio()">
+          <i
+            class="fas fa-briefcase text-xl hover:text-gray-900 cursor-pointer transition-colors"
+          ></i>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Container -->
+    <div class="w-full min-h-[90vh]">
+      <!-- Hero Image Section -->
+      <div
+        class="w-full h-[30vh] bg-[url('images/work.jpg')] bg-center bg-cover bg-no-repeat relative rounded-b-4xl"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black to-black/5 to-90% rounded-b-4xl"
+        ></div>
+        <div class="absolute bottom-6 left-8 text-white">
+          <h1 class="text-6xl font-bold mb-2 drop-shadow-lg">Work</h1>
+          <p class="text-xl opacity-90">Organize your professional journey</p>
+        </div>
+      </div>
+
+      <!-- Todo Section -->
+      <div class="max-w-5xl mx-auto px-6 py-12">
+        <!-- Add New Task -->
+        <div class="glass-effect rounded-2xl p-6 mb-2">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 relative">
+              <input
+                type="text"
+                id="taskInput"
+                class="task-input w-full px-6 py-4 bg-white border-2 border-gray-200 rounded-xl text-lg placeholder-gray-400 transition-all focus:border-indigo-500"
+                placeholder="What needs to be done today?"
+              />
+              <div
+                class="absolute right-4 top-1/2 transform -translate-y-1/2"
+              ></div>
+            </div>
+            <button
+              onclick="addTask()"
+              class="add-task-btn bg-black text-white px-8 py-4 rounded-xl font-semibold cursor-pointer"
+            >
+              Add Task
+            </button>
+          </div>
+        </div>
+
+        <!-- Tasks List -->
+        <div class="space-y-3" id="taskContainer">
+          <!-- Sample Tasks -->
+          <div class="task-card glass-effect rounded-xl p-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <button
+                  class="task-checkbox w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-green-500 transition-colors"
+                >
+                  <i class="fas fa-check text-green-500 opacity-0 text-xs"></i>
+                </button>
+                <div class="task-text font-semibold text-gray-800 text-lg">
+                  Complete 2 DSA Sums
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <button
+                  class="text-gray-400 hover:text-red-500 transition-colors p-2 cursor-pointer"
+                >
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="task-card glass-effect rounded-xl p-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <button
+                  class="task-checkbox w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-green-500 transition-colors"
+                >
+                  <i class="fas fa-check text-green-500 opacity-0 text-xs"></i>
+                </button>
+                <div class="task-text font-semibold text-gray-800 text-lg">
+                  Design portfolio front end
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <button
+                  class="text-gray-400 hover:text-red-500 transition-colors p-2 cursor-pointer"
+                >
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="task-card glass-effect rounded-xl p-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <button
+                  class="task-checkbox w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-green-500 transition-colors"
+                >
+                  <i class="fas fa-check text-green-500 opacity-0 text-xs"></i>
+                </button>
+                <div class="task-text font-semibold text-gray-800 text-lg">
+                  Schedule client meeting for next week
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <button
+                  class="text-gray-400 hover:text-red-500 transition-colors p-2 cursor-pointer"
+                >
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="task-card glass-effect rounded-xl p-6">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <button
+                  class="task-checkbox w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-green-500 transition-colors"
+                >
+                  <i class="fas fa-check text-green-500 opacity-0 text-xs"></i>
+                </button>
+                <div class="task-text font-semibold text-gray-800 text-lg">
+                  Finish quarterly report presentation
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <button
+                  class="text-gray-400 hover:text-red-500 transition-colors p-2 cursor-pointer"
+                >
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-16">
+          <div class="floating-animation">
+            <i class="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-700 mb-2">
+            All caught up!
+          </h3>
+          <p class="text-gray-500">No tasks remaining. Great job! 🎉</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function navigateToGithub() {
+        window.location.href = "https://github.com/keepupwithpawan/div-by-day-linkedin/";
+      }
+
+      function navigateToLinkedIn() {
+        window.location.href = "https://www.linkedin.com/in/pawankamat/";
+      }
+
+      function navigateToPortfolio() {
+        window.location.href = "https://pawankamat.vercel.app/";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+* {
+  font-family: "General Sans", sans-serif;
+}
+
+/* school */
+.task-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.priority-high {
+  border-left: 4px solid #ef4444;
+}
+.priority-medium {
+  border-left: 4px solid #f59e0b;
+}
+.priority-low {
+  border-left: 4px solid #10b981;
+}
+
+.task-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  #collection-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collections {
+    width: 90%;
+  }
+}
