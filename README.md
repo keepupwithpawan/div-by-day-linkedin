@@ -27,6 +27,7 @@ This series is my way of:
 | 5   | Error 404 Page - Canva | - | [Code](./Day5) |
 | 6   | Login Page - HTML & Tailwind | [View](https://div-by-day-linkedin-day-6.vercel.app/)  | [Code](./Day6) |
 | 7   | To Do App - HTML & Tailwind | [View](https://div-by-day-linkedin-day-7.vercel.app/)  | [Code](./Day7) |
+| 8   | Carousel - HTML & Tailwind | [View](https://div-by-day-linkedin-day-8.vercel.app/)  | [Code](./Day8) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
