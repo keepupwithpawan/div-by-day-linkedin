@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ripple Background Fixed</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- Ripple background layer -->
+      <div id="ripple-bg"></div>
+
+      <!-- Button container -->
+      <div id="btn-container" class="rounded-lg">
+        <div id="light" class="mode-btn rounded-l-lg">
+          <img src="images/sun.png" alt="Light Mode" />
+        </div>
+        <div id="dark" class="mode-btn rounded-r-lg">
+          <img src="images/moon.png" alt="Dark Mode" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
