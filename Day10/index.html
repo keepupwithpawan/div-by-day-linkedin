@@ -7,30 +7,25 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <style>
-    body,
-    html {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: "General Sans", sans-serif;
-    }
-
-    #sidebar-container {
-      background: rgba(255, 255, 255, 0.27);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(1.2px);
-      -webkit-backdrop-filter: blur(1.2px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-  </style>
   <body>
+    <!-- Hamburger Menu Button (Mobile Only) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Overlay (Mobile Only) -->
+    <div class="overlay" id="overlay"></div>
+
     <div
       id="main-container"
       class="w-full h-[100vh] overflow-hidden bg-[#121212] px-3 flex flex-col justify-center bg-gradient-to-r from-[#2581c4] to-white to-50%"
     >
-      <div id="sidebar-container" class="w-[18%] h-[96.5%] rounded-xl">
+      <div
+        id="sidebar-container"
+        class="w-[18%] h-[96.5%] rounded-xl md:w-[18%] md:h-[96.5%]"
+      >
         <div
           id="branding"
           class="w-full h-[5%] flex items-center px-4 py-7 gap-3"
@@ -43,12 +38,26 @@
           <ul
             class="w-full h-[60%] flex flex-col justify-evenly px-8 text-lg text-black/70"
           >
-            <li class="text-white cursor-pointer">Home</li>
-            <li class="cursor-pointer">Messages</li>
-            <li class="cursor-pointer">Dashboard</li>
-            <li class="cursor-pointer">Bookmarks</li>
-            <li class="cursor-pointer">Explore</li>
-            <li class="cursor-pointer">Settings</li>
+            <li
+              class="text-white cursor-pointer hover:text-white transition-colors"
+            >
+              Home
+            </li>
+            <li class="cursor-pointer hover:text-white transition-colors">
+              Messages
+            </li>
+            <li class="cursor-pointer hover:text-white transition-colors">
+              Dashboard
+            </li>
+            <li class="cursor-pointer hover:text-white transition-colors">
+              Bookmarks
+            </li>
+            <li class="cursor-pointer hover:text-white transition-colors">
+              Explore
+            </li>
+            <li class="cursor-pointer hover:text-white transition-colors">
+              Settings
+            </li>
           </ul>
         </div>
 
@@ -65,5 +74,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
