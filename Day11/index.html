@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Intro Transition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="infinity-container" id="infinity">
+      <div class="infinity-glow"></div>
+      <svg viewBox="0 0 100 100">
+        <path
+          class="infinity-path"
+          d="M10,50
+           C10,35 30,35 50,50
+           C70,65 90,65 90,50
+           C90,35 70,35 50,50
+           C30,65 10,65 10,50"
+        />
+        <path
+          class="tracer-path"
+          d="M10,50
+           C10,35 30,35 50,50
+           C70,65 90,65 90,50
+           C90,35 70,35 50,50
+           C30,65 10,65 10,50"
+        />
+      </svg>
+      <div class="loading-text">Loading</div>
+    </div>
+
+    <div class="white-overlay" id="overlay"></div>
+
+    <script>
+      const infinity = document.getElementById("infinity");
+      const overlay = document.getElementById("overlay");
+
+      setTimeout(() => {
+        infinity.classList.add("shine");
+
+        overlay.classList.add("fade-in");
+
+        setTimeout(() => {
+          window.location.href = "home.html";
+        }, 1000);
+      }, 5000);
+    </script>
+  </body>
+</html>
