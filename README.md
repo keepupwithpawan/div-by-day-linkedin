@@ -29,6 +29,7 @@ This series is my way of:
 | 7   | To Do App - HTML & Tailwind | [View](https://div-by-day-linkedin-day-7.vercel.app/)  | [Code](./Day7) |
 | 8   | Carousel - HTML & Tailwind | [View](https://div-by-day-linkedin-day-8.vercel.app/)  | [Code](./Day8) |
 | 9   | Dark Mode Toggle - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-9.vercel.app/)  | [Code](./Day9) |
+| 10   | Glassy Sidebar - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-10.vercel.app/)  | [Code](./Day10) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
