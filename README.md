@@ -31,7 +31,7 @@ This series is my way of:
 | 9   | Dark Mode Toggle - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-9.vercel.app/)  | [Code](./Day9) |
 | 10   | Glassy Sidebar - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-10.vercel.app/)  | [Code](./Day10) |
 | 11   | Glassy Sidebar - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-11.vercel.app/)  | [Code](./Day11) |
-| 12   | Glassy Sidebar - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-12.vercel.app/)  | [Code](./Day12) |
+| 12   | Caldendar UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-12.vercel.app/)  | [Code](./Day12) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
