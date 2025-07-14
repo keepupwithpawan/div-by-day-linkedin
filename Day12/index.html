@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div by Day - Day 12</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 font-['General_Sans']">
+    <div
+      class="calender-wrapper w-[100%] h-[100vh] flex flex-col justify-center items-center overflow-hidden"
+    >
+      <div class="calender w-[60%] h-[70%] bg-[#232222] rounded-2xl flex">
+        <div id="dates" class="w-[68%] h-full grid grid-cols-7 grid-rows-6 gap-1 p-6">
+          <!-- Days -->
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Sun</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Mon</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Tue</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Wed</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Thu</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Fri</div>
+          <div class="flex items-center justify-center text-gray-400 text-sm font-medium">Sat</div>
+          
+          <!-- Week 1 -->
+          <div class="flex items-center justify-center text-gray-500 text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">28</div>
+          <div class="flex items-center justify-center text-gray-500 text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">29</div>
+          <div class="flex items-center justify-center text-gray-500 text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">30</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">1</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">2</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">3</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">4</div>
+          
+          <!-- Week 2 -->
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">5</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">6</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">7</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">8</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">9</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">10</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">11</div>
+          
+          <!-- Week 3 -->
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">12</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">13</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">14</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors bg-orange-500">15</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">16</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">17</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">18</div>
+          
+          <!-- Week 4 -->
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">19</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">20</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">21</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">22</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">23</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">24</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">25</div>
+          
+          <!-- Week 5 -->
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">26</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">27</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">28</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">29</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">30</div>
+          <div class="flex items-center justify-center text-white text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">31</div>
+          <div class="flex items-center justify-center text-gray-500 text-sm hover:bg-gray-700 rounded cursor-pointer transition-colors">1</div>
+        </div>
+        
+        <div id="events" class="w-[42%] h-full bg-orange-500 text-white rounded-r-2xl p-6">
+          <h2 class="text-xl font-bold mb-4">Events</h2>
+          <div class="text-sm">
+            <p>Select a date to view events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
