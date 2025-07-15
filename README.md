@@ -32,6 +32,7 @@ This series is my way of:
 | 10   | Glassy Sidebar - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-10.vercel.app/)  | [Code](./Day10) |
 | 11   | Infinity Loading Animation - HTML, CSS & JS | [View](https://div-by-day-linkedin-day-11.vercel.app/)  | [Code](./Day11) |
 | 12   | Caldendar UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-12.vercel.app/)  | [Code](./Day12) |
+| 13   | Weather UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-13.vercel.app/)  | [Code](./Day13) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
