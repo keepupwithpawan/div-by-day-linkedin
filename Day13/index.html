@@ -21,11 +21,21 @@
             backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
+        /* Mobile */
+        @media (max-width: 1000px) {
+            #weather-container {
+                display: flex;
+                flex-direction: column;
+                height: 120vh;
+                overflow: scroll;
+            }
+        }
     </style>
 </head>
 
-<body class="bg-gray-100 font-['Inter']">
-    <div class="w-full h-[100vh] flex justify-center items-center gap-8 overflow-hidden">
+<body class="bg-gray-100 font-['General_Sans']">
+    <div id="weather-container" class="w-full h-[100vh] flex justify-center items-center gap-8 overflow-hidden">
         <!-- Sunny Weather Card -->
         <div
             class="w-[320px] h-[600px] bg-gradient-to-t from-orange-500 via-yellow-500 to-white to-85% rounded-3xl flex flex-col shadow-2xl overflow-hidden">
