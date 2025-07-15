@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div by Day - Day13</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4b1022cf8e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hourly-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-['Inter']">
+    <div class="w-full h-[100vh] flex justify-center items-center gap-8 overflow-hidden">
+        <!-- Sunny Weather Card -->
+        <div
+            class="w-[320px] h-[600px] bg-gradient-to-t from-orange-500 via-yellow-500 to-white to-85% rounded-3xl flex flex-col shadow-2xl overflow-hidden">
+            <div class="w-full px-6 pt-8 pb-4 text-center">
+                <h2 class="text-black text-xl font-medium">Dombivili, Maharashtra</h2>
+                <p class="text-black/80 text-sm mt-1">Tuesday, July 15</p>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center px-6 py-4">
+                <div class="text-black text-8xl font-light mb-2">32°</div>
+                <p class="text-black/90 text-lg font-medium">Severe heat expected</p>
+            </div>
+
+            <div class="px-6 mb-6">
+                <div class="glass-effect rounded-2xl p-4">
+                    <div class="flex justify-between text-black/90 text-sm mb-3">
+                        <span>High: 40°F</span>
+                        <span>Low: 28°F</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">☀️</div>
+                            <div class="text-black/80 text-xs">3%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">💧</div>
+                            <div class="text-black/80 text-xs">42%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">💨</div>
+                            <div class="text-black/80 text-xs">4 mph</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 mb-4">
+                <div class="glass-effect rounded-2xl p-4">
+                    <div class="flex items-center justify-center">
+                        <span class="text-black/90 text-sm font-medium">Weather Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 px-6 pb-6">
+                <div class="flex justify-between items-center h-full">
+                    <div class="text-center">
+                        <div class="text-black/80 text-xs mb-2">2pm</div>
+                        <div class="text-xl mb-2">☀️</div>
+                        <div class="text-black text-sm font-medium">34°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-black/80 text-xs mb-2">3pm</div>
+                        <div class="text-xl mb-2">☀️</div>
+                        <div class="text-black text-sm font-medium">36°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-black/80 text-xs mb-2">4pm</div>
+                        <div class="text-xl mb-2">☀️</div>
+                        <div class="text-black text-sm font-medium">38°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-black/80 text-xs mb-2">5pm</div>
+                        <div class="text-xl mb-2">🌤️</div>
+                        <div class="text-black text-sm font-medium">35°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-black/80 text-xs mb-2">6pm</div>
+                        <div class="text-xl mb-2">🌤️</div>
+                        <div class="text-black text-sm font-medium">32°</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 pb-6">
+                <button
+                    class="w-full glass-effect rounded-2xl py-3 text-black font-medium flex items-center justify-center">
+                    Div by Day - Day 13
+                </button>
+            </div>
+        </div>
+
+        <!-- Rainy Weather Card -->
+        <div
+            class="w-[320px] h-[600px] bg-gradient-to-t from-blue-900 via-gray-900 to-white rounded-3xl flex flex-col shadow-2xl overflow-hidden">
+            <div class="w-full px-6 pt-8 pb-4 text-center">
+                <h2 class="text-black text-xl font-medium">Dombivili, Maharashtra</h2>
+                <p class="text-black/80 text-sm mt-1">Tuesday, July 15</p>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center px-6 py-4">
+                <div class="text-black text-8xl font-light mb-2">16°</div>
+                <p class="text-black/90 text-lg font-medium">Heavy rain</p>
+            </div>
+
+            <div class="px-6 mb-6">
+                <div class="glass-effect rounded-2xl p-4">
+                    <div class="flex justify-between text-white/90 text-sm mb-3">
+                        <span>High: 18°F</span>
+                        <span>Low: 10°F</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">🌧️</div>
+                            <div class="text-white/80 text-xs">90%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">💧</div>
+                            <div class="text-white/80 text-xs">85%</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">💨</div>
+                            <div class="text-white/80 text-xs">12 mph</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 mb-4">
+                <div class="glass-effect rounded-2xl p-4">
+                    <div class="flex items-center justify-center">
+                        <span class="text-white/90 text-sm font-medium">Weather Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 px-6 pb-6">
+                <div class="flex justify-between items-center h-full">
+                    <div class="text-center">
+                        <div class="text-white/80 text-xs mb-2">12pm</div>
+                        <div class="text-xl mb-2">🌧️</div>
+                        <div class="text-white text-sm font-medium">16°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-white/80 text-xs mb-2">1pm</div>
+                        <div class="text-xl mb-2">🌧️</div>
+                        <div class="text-white text-sm font-medium">17°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-white/80 text-xs mb-2">2pm</div>
+                        <div class="text-xl mb-2">⛈️</div>
+                        <div class="text-white text-sm font-medium">17°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-white/80 text-xs mb-2">3pm</div>
+                        <div class="text-xl mb-2">🌧️</div>
+                        <div class="text-white text-sm font-medium">16°</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-white/80 text-xs mb-2">4pm</div>
+                        <div class="text-xl mb-2">☁️</div>
+                        <div class="text-white text-sm font-medium">15°</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 pb-6">
+                <button
+                    class="w-full glass-effect rounded-2xl py-3 text-white font-medium flex items-center justify-center">
+                    Div by Day - Day 13
+                </button>
+            </div>
+        </div>
+</body>
+
+</html>
