@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Div by Day - Day 14</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4b1022cf8e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#0d0d0d] font-['General_Sans']">
+  <div id="search-bar-container" class="w-full h-[100vh] overflow-hidden flex justify-center items-center">
+    <div id="search-bar" class="w-[50%] flex flex-col justify-center items-center">
+      <input type="text" id="searchInput" class="w-[75%] p-5 py-6 rounded-2xl bg-[#242424] text-white/50 font-bold outline-none transition-all duration-700 ease-in" placeholder="Click to search" onclick="expandSearchBar()" />
+
+      <div id="recents" class="recent-box">
+        <p class="w-full text-xl text-white mb-5">Recent Searches</p>
+        <div id="recent-pills" class="w-full">
+          <ul class="w-full flex flex-col gap-3">
+            <li class="flex justify-between px-4 py-3 bg-[#2e2e2e] text-white/70 rounded-lg text-sm">Python Course <span>&#10007;</span></li>
+            <li class="flex justify-between px-4 py-3 bg-[#2e2e2e] text-white/70 rounded-lg text-sm">How to center a div? <span>&#10007;</span></li>
+            <li class="flex justify-between px-4 py-3 bg-[#2e2e2e] text-white/70 rounded-lg text-sm">Pawan Kamat LinkedIn <span>&#10007;</span></li>
+            <li class="flex justify-between px-4 py-3 bg-[#2e2e2e] text-white/70 rounded-lg text-sm">How to get a job? <span>&#10007;</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
