@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <div id="layout">
+      <div id="sidebar-holder">
+        <div class="window-controls">
+          <button class="control-dot close"></button>
+          <button class="control-dot minimize"></button>
+          <button class="control-dot maximize"></button>
+        </div>
+
+        <div class="sidebar-content">
+          <div class="sidebar-section">
+            <div class="section-header">
+              Favorites
+              <button class="add-button"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="collapsible-header" onclick="toggleCollapse(this)">
+              <i class="fas fa-chevron-right collapse-icon expanded"></i>
+              <i class="fas fa-inbox menu-icon"></i>
+              <span class="menu-text">All Videos</span>
+            </div>
+            <div class="collapsible-content">
+              <div class="menu-item active">
+                <i class="fas fa-home menu-icon"></i>
+                <span class="menu-text">Home</span>
+                <span class="menu-count">24</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-fire menu-icon"></i>
+                <span class="menu-text">Trending</span>
+                <span class="menu-count">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <div class="collapsible-header" onclick="toggleCollapse(this)">
+              <i class="fas fa-chevron-right collapse-icon expanded"></i>
+              <i class="fas fa-star menu-icon"></i>
+              <span class="menu-text">Categories</span>
+            </div>
+            <div class="collapsible-content">
+              <div class="menu-item">
+                <i class="fas fa-code menu-icon"></i>
+                <span class="menu-text">Programming</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-palette menu-icon"></i>
+                <span class="menu-text">Design</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-mobile-alt menu-icon"></i>
+                <span class="menu-text">Mobile Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <div class="collapsible-header" onclick="toggleCollapse(this)">
+              <i class="fas fa-chevron-right collapse-icon expanded"></i>
+              <i class="fas fa-bookmark menu-icon"></i>
+              <span class="menu-text">Library</span>
+            </div>
+            <div class="collapsible-content">
+              <div class="menu-item">
+                <i class="fas fa-flag menu-icon"></i>
+                <span class="menu-text">Flagged</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-file-alt menu-icon"></i>
+                <span class="menu-text">Watch Later</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-history menu-icon"></i>
+                <span class="menu-text">History</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <div class="section-header">Smart Collections</div>
+            <div class="menu-item">
+              <i class="fas fa-clock menu-icon"></i>
+              <span class="menu-text">Today</span>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-calendar-week menu-icon"></i>
+              <span class="menu-text">This Week</span>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-graduation-cap menu-icon"></i>
+              <span class="menu-text">Learning</span>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <div class="section-header">Channels</div>
+            <div class="menu-item">
+              <i class="fas fa-cloud menu-icon"></i>
+              <span class="menu-text">Tech Channel</span>
+              <span class="menu-count">7</span>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-play-circle menu-icon"></i>
+              <span class="menu-text">Code Academy</span>
+              <span class="menu-count">15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <div class="profile-item">
+            <img class="profile-avatar" src="./images/pawan.png" alt="PK"></img>
+            <div class="profile-info">
+              <div class="profile-name">Pawan Kamat</div>
+              <div class="profile-status">pawankamat@icloud.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="videos-container">
+        <div class="page-header">
+          <h1 class="page-title">Home</h1>
+          <p class="page-subtitle">Discover the latest videos and tutorials</p>
+        </div>
+
+        <div id="video-grid">
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/NFrFhBJPTmI/maxresdefault.jpg"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">12:45</div>
+            <div class="video-content">
+              <h3 class="video-title">
+                How to Build a Sidebar with Tailwind CSS
+              </h3>
+              <p class="video-meta">Tailwind Master • 20K views • 2 days ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/JITwwrVSteE/maxresdefault.jpg"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">8:32</div>
+            <div class="video-content">
+              <h3 class="video-title">Responsive Video Grid with Tailwind</h3>
+              <p class="video-meta">Code Academy • 120K views • 1 week ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/v0o1kV-qfVI/maxresdefault.jpg"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">15:20</div>
+            <div class="video-content">
+              <h3 class="video-title">Advanced CSS Grid Techniques</h3>
+              <p class="video-meta">CSS Mastery • 85K views • 4 days ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/8ahnUt_A5eA/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">9:47</div>
+            <div class="video-content">
+              <h3 class="video-title">Modern Web Design Trends 2024</h3>
+              <p class="video-meta">Design Hub • 180K views • 3 days ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/LOH1l-MP_9k/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">18:55</div>
+            <div class="video-content">
+              <h3 class="video-title">React Hooks Complete Guide</h3>
+              <p class="video-meta">React Pro • 95K views • 5 days ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/Oe421EPjeBE/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">14:03</div>
+            <div class="video-content">
+              <h3 class="video-title">Node.js Backend Development</h3>
+              <p class="video-meta">Backend Master • 42K views • 1 week ago</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <img
+              src="https://img.youtube.com/vi/lWX5mk2adrg/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              class="video-thumbnail"
+            />
+            <div class="play-indicator">
+              <i class="fas fa-play play-icon"></i>
+            </div>
+            <div class="duration-badge">11:29</div>
+            <div class="video-content">
+              <h3 class="video-title">Database Design Best Practices</h3>
+              <p class="video-meta">Data Science • 67K views • 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
