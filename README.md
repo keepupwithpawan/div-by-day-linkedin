@@ -34,6 +34,7 @@ This series is my way of:
 | 12   | Caldendar UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-12.vercel.app/)  | [Code](./Day12) |
 | 13   | Weather UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-13.vercel.app/)  | [Code](./Day13) |
 | 14   | Expandable Seach Bar - HTML, Tailwind & JS | [View](https://div-by-day-linkedin-day-14.vercel.app/)  | [Code](./Day14) |
+| 15   | Apple Style Youtube Redesign - HTML, Tailwind & JS | [View](https://div-by-day-linkedin-day-15.vercel.app/)  | [Code](./Day15) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
