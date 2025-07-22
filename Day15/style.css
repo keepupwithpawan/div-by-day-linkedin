@@ -533,7 +533,12 @@ body {
   }
 
   .video-card {
-    height: 280px;
+    height: 400px;
+  }
+
+  .page-header {
+    justify-self: center;
+    text-align: center;
   }
 
   .page-title {
