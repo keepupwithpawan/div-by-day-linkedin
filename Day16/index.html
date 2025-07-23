@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div by Day - Day 16</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-['General_Sans']">
+    <div
+      id="player-container"
+      class="w-[100vw] h-[100vh] overflow-hidden flex justify-center items-center"
+    >
+      <div
+        id="player"
+        class="w-[50%] h-[40%] bg-black/20 rounded-2xl flex justify-between items-center p-2 shadow-lg"
+      >
+        <div
+          id="left"
+          class="w-[40%] h-[100%] rounded-xl flex justify-between items-end px-7 pb-5"
+        >
+          <i
+            class="fa-solid fa-share-from-square fa-xl px-4 py-7 bg-white/30 rounded-[50%] text-white cursor-pointer"
+          ></i>
+          <i
+            id="heart"
+            class="fa-solid fa-heart fa-xl px-4 py-7 bg-white/30 rounded-[50%] text-white cursor-pointer"
+            onclick="likeSong()"
+          ></i>
+        </div>
+
+        <div
+          id="right"
+          class="w-[59%] h-[100%] rounded-xl bg-[#f0f0f0] flex flex-col justify-between p-6"
+        >
+          <!-- Song Info -->
+          <div class="flex items-center gap-4">
+            <div>
+              <h3 class="font-bold text-3xl text-black">Push-Ups</h3>
+              <p class="text-black/40 text-lg mt-2">Drake</p>
+            </div>
+            <div class="ml-auto">
+              <div class="w-8 h-6 flex flex-col justify-start">
+                <i class="fa-brands fa-spotify fa-2xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="space-y-2">
+            <div class="w-full bg-gray-300 rounded-full h-2">
+              <div class="bg-gray-600 h-2 rounded-full w-1/6"></div>
+            </div>
+            <div class="flex justify-between text-sm text-gray-600 mt-3">
+              <span>0:27</span>
+              <span>-3:26</span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="flex justify-center items-center gap-12">
+            <i
+              id="controls-share"
+              class="fa-solid fa-share-from-square fa-xl px-4 py-7 rounded-[50%] text-black cursor-pointer justify-self-start"
+            ></i>
+
+            <i
+              class="fa-solid fa-backward-step text-3xl text-black cursor-pointer"
+            ></i>
+            <i class="fa-solid fa-pause text-3xl text-black cursor-pointer"></i>
+            <i
+              class="fa-solid fa-forward-step text-3xl text-black cursor-pointer"
+            ></i>
+            <i
+              id="controls-heart"
+              class="fa-solid fa-heart fa-xl px-4 py-7 rounded-[50%] text-black cursor-pointer justify-self-end"
+              onclick="likeSong()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const heart = document.getElementById("heart");
+      const controlsHeart = document.getElementById("controls-heart");
+
+      function likeSong() {
+        if (heart.style.color === "red" || controlsHeart.style.color === "red") {
+          heart.style.color = "white";
+          controlsHeart.style.color = "black";
+        } else {
+          heart.style.color = "red";
+          controlsHeart.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+/* Keep this unchanged */
+#left {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url("https://www.shazam.com/mkimage/image/thumb/Music211/v4/54/d3/5d/54d35d13-dfab-74ab-b3e7-e37fc75337ad/23UM1IM56240.rgb.jpg/510x510bb-60.webp")
+      center/cover no-repeat;
+}
+
+/* Hide bottom controls by default */
+#controls-share,
+#controls-heart {
+  display: none;
+}
+
+/* Responsive layout for ≤ 1500px */
+@media (max-width: 1500px) {
+  #player {
+    width: 30%;
+    height: 60%;
+    flex-direction: column;
+  }
+
+  #left, #right {
+    width: 100%;
+  }
+
+  #left > i {
+    display: none;
+  }
+
+  #controls-share, #controls-heart {
+    display: block;
+}
+}
+
+@media (max-width: 1250px) {
+  /* Scale down icon sizes */
+  #right .fa-solid,
+  #right .fa-brands {
+    font-size: 1.5rem; /* ~20px */
+  }
+
+  /* Adjust gap between controls */
+  #right > .flex.gap-12 {
+    gap: 2rem !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Make controls more compact */
+  #controls-share,
+  #controls-heart {
+    padding: 0.75rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Scale down icon sizes */
+  #right .fa-solid,
+  #right .fa-brands {
+    font-size: 1.5rem; /* ~20px */
+  }
+
+  /* Adjust gap between controls */
+  #right > .flex.gap-12 {
+    gap: 1.2rem !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Make controls more compact */
+  #controls-share,
+  #controls-heart {
+    padding: 0.75rem !important;
+  }
+}
