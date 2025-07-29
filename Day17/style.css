@@ -1,0 +1,22 @@
+#toc > h4 > span {
+  transition: color ease-in-out 0.2s;
+}
+
+.collapsed {
+  height: 10%;
+  transition: height ease-in-out 0.5s;
+}
+
+.expanded {
+  height: 40%;
+  transition: height ease-in-out 0.5s;
+}
+
+.toc-content {
+  display: none;
+}
+
+.expanded .toc-content {
+  display: block;
+  margin-top: 1rem;
+}

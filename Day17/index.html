@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div by Day - Day 17</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b1022cf8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-['General_Sans']">
+    <div
+      id="toc-container"
+      class="w-full h-[100vh] overflow-hidden flex justify-center items-center bg-gray-10000"
+    >
+      <div
+        id="toc"
+        class="collapsed w-[45%] bg-[#121212] text-white text-lg flex flex-col justify-start p-7 rounded-xl cursor-pointer"
+      >
+        <h4 class="flex justify-between items-center">
+          Terms and conditions
+          <span
+            class="text-sm text-white/50 underline underline-offset-2 hover:text-white/90"
+          >
+            click to know more
+          </span>
+        </h4>
+
+        <div class="toc-content text-sm text-white/80">
+          <ul
+            class="list-disc text-[15px] ml-5 mt-5 space-y-4 text-justify pr-4"
+          >
+            <li>
+              We are not responsible for any errors or omissions on this website
+              or for any damages resulting from your use of this website.
+            </li>
+            <li>
+              We reserve the right to terminate your access to this website at
+              any time, without notice, if you violate these terms and
+              conditions.
+            </li>
+            <li>
+              These terms and conditions shall be governed by and construed in
+              accordance with the laws of India.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("toc").onclick = function () {
+        this.classList.toggle("expanded");
+      };
+    </script>
+  </body>
+</html>
