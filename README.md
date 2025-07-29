@@ -36,6 +36,7 @@ This series is my way of:
 | 14   | Expandable Seach Bar - HTML, Tailwind & JS | [View](https://div-by-day-linkedin-day-14.vercel.app/)  | [Code](./Day14) |
 | 15   | Apple Style Youtube Redesign - HTML, Tailwind & JS | [View](https://div-by-day-linkedin-day-15.vercel.app/)  | [Code](./Day15) |
 | 16   | Music Player UI - HTML & Tailwind | [View](https://div-by-day-linkedin-day-16.vercel.app/)  | [Code](./Day16) |
+| 17   | Expandable TOC Panel - HTML & Tailwind | [View](https://div-by-day-linkedin-day-17.vercel.app/)  | [Code](./Day17) |
 | ... | – | – | – |
 
 > Each day includes a fully responsive solution, mobile-first styling, and clean semantic markup.
